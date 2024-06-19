@@ -1,6 +1,6 @@
 # JSONExpander
 
-JSONExpander is a simple application for expanding and compacting JSON files.
+JSONExpander is a simple tool for expanding and compacting JSON files.
 
 - `expand.py`: Indents JSON to make it more readable.
 - `compact.py`: Removes indentation from JSON to make it more compact.
