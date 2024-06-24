@@ -14,12 +14,12 @@ def expand_json(input_dir, output_dir):
             input_file_path = os.path.join(input_dir, filename)
             output_file_path = os.path.join(output_dir, filename)
             
-            with open(input_file_path, 'r') as input_file:
+            with open(input_file_path, 'r', encoding='utf-8') as input_file:
                 data = json.load(input_file)
             
-            expanded_json = json.dumps(data, indent=2) #indent value
+            expanded_json = json.dumps(data, indent=2) # indent value
             
-            with open(output_file_path, 'w') as output_file:
+            with open(output_file_path, 'w', encoding='utf-8') as output_file:
                 output_file.write(expanded_json)
             
             print(f"JSON file has been expanded and saved to {output_file_path}")
